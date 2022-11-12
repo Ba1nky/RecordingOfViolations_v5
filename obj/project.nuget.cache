@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UOGpxIo6Mkx10HhP8wzvU3R3yl4up1MN0WhMwt+p2siUrde+rN0mrN+THVQWPUVnfRmaZs9ZfAFouDnhRfMwBg==",
+  "dgSpecHash": "kGp+XHzoKtay3rYnIzDOdrPhRNs5UzqO2z6jmrPdfNvGdM4o0Ltnp9AoJUSBzbm4oOoFJo8BaPky3erakv7TLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\RecordingOfViolations.csproj",
+  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\RecordingOfViolations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

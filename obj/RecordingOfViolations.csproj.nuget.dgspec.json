@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\RecordingOfViolations.csproj": {}
+    "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\RecordingOfViolations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\RecordingOfViolations.csproj": {
+    "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\RecordingOfViolations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\RecordingOfViolations.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\RecordingOfViolations.csproj",
         "projectName": "RecordingOfViolations",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\RecordingOfViolations.csproj",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\RecordingOfViolations.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v5\\obj\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Робочий стіл\\RecordingOfViolations_v2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
