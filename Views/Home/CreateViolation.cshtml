@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+ 
+@inject IViewLocalizer Localizer
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model RecordingOfViolations.Models.Violation
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@SharedLocalizer["CreateViolation"]</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.Reason,@SharedLocalizer["Reason"].Value)
+    <br>
+    @Html.DropDownListFor(m => m.ReasonId, ViewBag.Reasons as SelectList)
+    <br>
+    <br>
+    @Html.LabelFor(m => m.Address,@SharedLocalizer["Address"])
+    <br>
+    @Html.EditorFor(m => m.Address)
+    <br>
+    <br>
+        @Html.LabelFor(m => m.Policeman,@SharedLocalizer["Policeman"])
+        <br>
+        @Html.EditorFor(m => m.Policeman)
+    <br>
+    <br>
+    @Html.LabelFor(m => m.Offender,@SharedLocalizer["Offender"])
+    <br>
+    @Html.EditorFor(m => m.Offender)
+    <br>
+    <br>
+    @Html.LabelFor(m => m.Price,@SharedLocalizer["Price"])
+    <br>
+    @Html.EditorFor(m => m.Price)
+    <br>
+    <br>
+    <input type="submit" value=@SharedLocalizer["Create"]>
+}

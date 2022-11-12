@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+ 
+@inject IViewLocalizer Localizer
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model RecordingOfViolations.Models.Violation
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>@SharedLocalizer["PurchasePayment"]</h3>
+    <form method="post" action="">
+        <input type="hidden" value="@ViewBag.ViolationId" name="ViolationId" />
+        <table>
+            <tr>
+                <td><p>@SharedLocalizer["PaymentType"]</p></td>
+                <td><input type="text" name="PaymentType"></td>
+            </tr>
+            <tr>
+                <td><p>@SharedLocalizer["Payer"]</p></td>
+                <td><input type="text" name="Payer"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value=@SharedLocalizer["Pay"]></td>
+            </tr>
+        </table>
+    </form>
+</div>

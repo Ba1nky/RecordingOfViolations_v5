@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+ 
+@inject IViewLocalizer Localizer
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model RecordingOfViolations.Models.Violation
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@SharedLocalizer["Violation"] №@Model.ViolationId</h2><!-- !!!! -->
+@using (Html.BeginForm("EditViolation","Home",FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.ViolationId)
+        @Html.HiddenFor(m => m.Date)
+        <p>
+            @Html.LabelFor(m => m.Reason,@SharedLocalizer["Reason"].Value)
+            <br>
+            @Html.DropDownListFor(m => m.ReasonId, ViewBag.Reasons as SelectList)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Address,@SharedLocalizer["Address"])
+            <br>
+            @Html.EditorFor(m => m.Address)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Policeman,@SharedLocalizer["Policeman"])
+            <br>
+            @Html.EditorFor(m => m.Policeman)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Offender,@SharedLocalizer["Offender"])
+            <br>
+            @Html.EditorFor(m => m.Offender)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Price,@SharedLocalizer["Price"])
+            <br>
+            @Html.EditorFor(m => m.Price)
+        </p>
+        <p>
+            <input type="submit" value=@SharedLocalizer["Edit"]>
+        </p>
+    </fieldset>
+}    
